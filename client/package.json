@@ -1,14 +1,13 @@
 {
-  "name": "finance-platform",
+  "name": "intellicollab-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "email dev",
-    "postinstall": "prisma generate"
+    "email": "email dev"
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-alpha.34",
@@ -26,6 +25,7 @@
     "@radix-ui/react-switch": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.1.4",
     "@react-email/components": "0.0.30",
+    "@tailwindcss/postcss": "^4.1.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -52,6 +52,6 @@
     "postcss": "^8",
     "prisma": "^6.0.1",
     "react-email": "3.0.3",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^4.1.12"
   }
 }

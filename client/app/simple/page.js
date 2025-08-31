@@ -1,4 +1,5 @@
 import React from "react";
+import SimpleHeader from "@/components/simple-header";
 import SimpleHero from "@/components/simple-hero";
 import {
   featuresData,
@@ -7,9 +8,12 @@ import {
   testimonialsData,
 } from "@/data/landing";
 
-const LandingPage = () => {
+const SimpleLandingPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      {/* Header */}
+      <SimpleHeader />
+
       {/* Hero Section */}
       <SimpleHero />
 
@@ -100,26 +104,8 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-purple-900 to-blue-900">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Team Collaboration?
-          </h2>
-          <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of teams who are already collaborating smarter with 
-            AI-powered insights and intelligent project management.
-          </p>
-          <a href="/dashboard">
-            <button className="px-8 py-3 text-lg bg-white text-purple-600 hover:bg-gray-100 rounded-lg font-medium transition-all shadow-lg">
-              Start Collaborating Now
-            </button>
-          </a>
-        </div>
-      </section>
     </div>
   );
 };
 
-export default LandingPage;
+export default SimpleLandingPage;
